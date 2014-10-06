@@ -1,0 +1,3 @@
+## 2014-10-04 12:03:28 Start mpirun with '104^3 in 3600sec'
+## 2014-10-04 13:16:58 Job ends
+NODES:venus[001-008]  | MPI:omp-sys    | WALL:4410  | TIME:3705.66  | GFLOP/s:4.71481    | #THREADS/PROC:1   | #PROC:64  | Problem:416x416x416     | Local:104x104x104

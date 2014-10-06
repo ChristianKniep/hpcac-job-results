@@ -1,0 +1,35 @@
+++ cat /etc/issue
+/var/lib/slurm/slurmd/job00363/slurm_script: line 10: cat: command not found
+++ grep -c 'Ubuntu 12.04'
+/var/lib/slurm/slurmd/job00363/slurm_script: line 10: grep: command not found
++ '[' -eq 1 ']'
+/var/lib/slurm/slurmd/job00363/slurm_script: line 10: [: -eq: unary operator expected
++ [[ omp-1.8.3 =~ omp ]]
++ '[' omp-1.8.3 == omp-sys ']'
+++ echo omp-1.8.3
+++ egrep -o '[0-9\.]+'
+/var/lib/slurm/slurmd/job00363/slurm_script: line 27: egrep: command not found
++ MPI_NR=
++ MPI_PATH=/usr/local/openmpi//
++ echo MPI_PATH=/usr/local/openmpi//
++ BASE_PATH=/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin
++ export PATH=/usr/local/openmpi///bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin
++ PATH=/usr/local/openmpi///bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin
++ export LD_LIBRARY_PATH=/usr/local/openmpi///lib:/usr/local/lib
++ LD_LIBRARY_PATH=/usr/local/openmpi///lib:/usr/local/lib
++ set +x
+START_TIME=1412506889
+## 2014-10-05 11:01:29 Start mpirun with '104^3 in 3600sec'
+[u12_1:00554] [[45094,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00554] [[45094,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00554] [[45094,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00554] [[45094,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00554] [[45094,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00554] [[45094,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00554] [[45094,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00554] [[45094,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+--------------------------------------------------------------------------
+mpirun noticed that the job aborted, but has no info as to the process
+that caused that situation.
+--------------------------------------------------------------------------
+## 2014-10-05 11:01:29 Job ends

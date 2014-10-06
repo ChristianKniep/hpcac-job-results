@@ -1,0 +1,148 @@
+START_TIME=1412499250
+## 2014-10-05 08:54:10 Start mpirun with '104^3 in 3600sec'
+[[45059,1],22][btl_openib_component.c:3382:handle_wc] from u12_3 [[45059,1],20][btl_openib_component.c:3382:handle_wc] from u12_3 to: u12_2 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 4bdca580 opcode 1  vendor error 129 qp_idx 1
+[[45059,1],21][btl_openib_component.c:3382:handle_wc] from u12_3 to: u12_3 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 4b5d7700 opcode 128  vendor error 129 qp_idx 3
+[[45059,1],23][btl_openib_component.c:3382:handle_wc] from u12_3 to: u12_2 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 140f400 opcode 1  vendor error 129 qp_idx 1
+to: u12_6 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 4a537980 opcode 0  vendor error 129 qp_idx 0
+--------------------------------------------------------------------------
+The InfiniBand retry count between two MPI processes has been
+exceeded.  "Retry count" is defined in the InfiniBand spec 1.2
+(section 12.7.38):
+
+    The total number of times that the sender wishes the receiver to
+    retry timeout, packet sequence, etc. errors before posting a
+    completion error.
+
+This error typically means that there is something awry within the
+InfiniBand fabric itself.  You should note the hosts on which this
+error has occurred; it has been observed that rebooting or removing a
+particular host from the job can sometimes resolve this issue.
+
+Two MCA parameters can be used to control Open MPI's behavior with
+respect to the retry count:
+
+* btl_openib_ib_retry_count - The number of times the sender will
+  attempt to retry (defaulted to 7, the maximum value).
+* btl_openib_ib_timeout - The local ACK timeout parameter (defaulted
+  to 20).  The actual timeout value used is calculated as:
+
+     4.096 microseconds * (2^btl_openib_ib_timeout)
+
+  See the InfiniBand spec 1.2 (section 12.7.34) for more details.
+
+Below is some information about the host that raised the error and the
+peer to which it was connected:
+
+  Local host:   u12_3
+  Local device: mlx4_0
+  Peer host:    u12_2
+
+You may need to consult with your system administrator to get this
+problem fixed.
+--------------------------------------------------------------------------
+[[45059,1],24][btl_openib_component.c:3382:handle_wc] from u12_4 to: u12_2 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id a93500 opcode 1  vendor error 129 qp_idx 0[[45059,1],25][btl_openib_component.c:3382:handle_wc] from u12_4 to: u12_2 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 1e87a80 opcode 128  vendor error 129 qp_idx 0
+[[45059,1],26][btl_openib_component.c:3382:handle_wc] from u12_4 to: u12_2 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 4b9cd100 opcode 1  vendor error 129 qp_idx 0
+[[45059,1],30][btl_openib_component.c:3382:handle_wc] from u12_4 to: u12_2 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 19c8780 opcode 128  vendor error 129 qp_idx 0
+[[45059,1],27][btl_openib_component.c:3382:handle_wc] from u12_4 
+[[45059,1],29][btl_openib_component.c:3382:handle_wc] from u12_4 to: u12_2 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id c25980 opcode 128  vendor error 129 qp_idx 0
+[[45059,1],31][btl_openib_component.c:3382:handle_wc] from u12_4 to: u12_2 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 1597f00 opcode 1  vendor error 129 qp_idx 0
+to: u12_2 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 2202500 opcode 128  vendor error 129 qp_idx 0
+[[45059,1],28][btl_openib_component.c:3382:handle_wc] from u12_4 to: u12_2 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 25b1f80 opcode 1  vendor error 129 qp_idx 0
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+[[45059,1],4][btl_openib_component.c:3382:handle_wc] from u12_1 to: u12_2 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 1d06b00 opcode 1  vendor error 129 qp_idx 0
+[[45059,1],5][btl_openib_component.c:3382:handle_wc] from u12_1 to: u12_2 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 4b749300 opcode 128  vendor error 129 qp_idx 1
+[[45059,1],6][btl_openib_component.c:3382:handle_wc] from u12_1 to: u12_2 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id a1b700 opcode 1  vendor error 129 qp_idx 0
+[[45059,1],7][btl_openib_component.c:3382:handle_wc] from u12_1 to: u12_2 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 15fa680 opcode 1  vendor error 129 qp_idx 0
+[u12_1:00527] 15 more processes have sent help message help-mpi-btl-openib.txt / pp retry exceeded
+[u12_1:00527] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+slurmstepd: *** JOB 360 CANCELLED AT 2014-10-05T09:24:38 DUE TO NODE u12_1 FAILURE ***
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: abort is already in progress...hit ctrl-c again to forcibly terminate
+
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job
+mpirun: Forwarding signal 18 to job

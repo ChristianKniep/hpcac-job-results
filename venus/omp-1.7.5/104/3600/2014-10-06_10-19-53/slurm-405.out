@@ -1,0 +1,110 @@
+START_TIME=1412601089
+## 2014-10-06 15:11:29 Start mpirun with '104^3 in 3600sec'
+[venus002][[12050,1],8][btl_openib.c:951:mca_btl_openib_add_procs] could not prepare openib device for use
+[venus002][[12050,1],9][btl_openib.c:951:mca_btl_openib_add_procs] could not prepare openib device for use
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[venus002:2609] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[venus002:2610] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+[venus002][[12050,1],10][btl_openib.c:951:mca_btl_openib_add_procs] could not prepare openib device for use
+[venus002][[12050,1],11][btl_openib.c:951:mca_btl_openib_add_procs] could not prepare openib device for use
+--------------------------------------------------------------------------
+The OpenFabrics (openib) BTL failed to initialize while trying to
+allocate some locked memory.  This typically can indicate that the
+memlock limits are set too low.  For most HPC installations, the
+memlock limits should be set to "unlimited".  The failure occured
+here:
+
+  Local host:    venus002
+  OMPI source:   btl_openib.c:872
+  Function:      ompi_free_list_init_ex_new()
+  Device:        mlx4_0
+  Memlock limit: 1048576
+
+You may need to consult with your system administrator to get this
+problem fixed.  This FAQ entry on the Open MPI web site may also be
+helpful:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+At least one pair of MPI processes are unable to reach each other for
+MPI communications.  This means that no Open MPI device has indicated
+that it can be used to communicate between these processes.  This is
+an error; Open MPI requires that all MPI processes be able to reach
+each other.  This error can sometimes be the result of forgetting to
+specify the "self" BTL.
+
+  Process 1 ([[12050,1],9]) is on host: venus002
+  Process 2 ([[12050,1],0]) is on host: venus002
+  BTLs attempted: openib self
+
+Your MPI job is now going to abort; sorry.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_INIT has failed because at least one MPI process is unreachable
+from another.  This *usually* means that an underlying communication
+plugin -- such as a BTL or an MTL -- has either not loaded or not
+allowed itself to be used.  Your MPI job will now abort.
+
+You may wish to try to narrow down the problem;
+
+ * Check the output of ompi_info to see which BTL/MTL plugins are
+   available.
+ * Run your application with MPI_THREAD_SINGLE.
+ * Set the MCA parameter btl_base_verbose to 100 (or mtl_base_verbose,
+   if using MTL-based communications) to see exactly which
+   communication plugins were considered and/or discarded.
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[venus002:2611] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+[venus002][[12050,1],12][btl_openib.c:951:mca_btl_openib_add_procs] could not prepare openib device for use
+[venus002][[12050,1],13][btl_openib.c:951:mca_btl_openib_add_procs] could not prepare openib device for use
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[venus002:2612] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[venus002:2613] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+[venus002:2614] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+[venus002][[12050,1],14][btl_openib.c:951:mca_btl_openib_add_procs] could not prepare openib device for use
+[venus002][[12050,1],15][btl_openib.c:951:mca_btl_openib_add_procs] could not prepare openib device for use
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[venus002:2618] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[venus002:2616] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[12050,1],13]
+  Exit code:    1
+--------------------------------------------------------------------------
+## 2014-10-06 15:11:31 Job ends

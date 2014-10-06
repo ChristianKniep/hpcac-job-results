@@ -1,0 +1,13 @@
+START_TIME=1412529930
+## 2014-10-05 18:25:30 Start mpirun with '104^3 in 3600sec'
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: /chome/cluser/hpcg-2.4/centos7_omp-1.8.3/bin/xhpcg
+Node: cos7_1
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+24 total processes failed to start
+## 2014-10-05 18:25:31 Job ends

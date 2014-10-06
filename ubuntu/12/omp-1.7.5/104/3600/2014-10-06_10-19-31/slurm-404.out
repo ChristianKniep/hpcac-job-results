@@ -1,0 +1,8 @@
+START_TIME=1412596694
+## 2014-10-06 11:58:14 Start mpirun with '104^3 in 3600sec'
+## 2014-10-06 13:11:29 Job ends
+END_TIME=1412601089
+Traceback (most recent call last):
+  File "/usr/local/bin/eval_hpcg.py", line 12, in <module>
+    from docopt import docopt
+ImportError: No module named docopt

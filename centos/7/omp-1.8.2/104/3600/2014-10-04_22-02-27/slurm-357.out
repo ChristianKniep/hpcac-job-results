@@ -1,0 +1,3 @@
+## 2014-10-04 21:17:26 Start mpirun with '104^3 in 3600sec'
+## 2014-10-04 22:30:56 Job ends
+NODES:cos7_[1-8]      | MPI:omp-1.8.2  | WALL:4410  | TIME:3706.16  | GFLOP/s:4.71418    | #THREADS/PROC:1   | #PROC:64  | Problem:416x416x416     | Local:104x104x104

@@ -1,0 +1,74 @@
+START_TIME=1412518085
+## 2014-10-05 14:08:05 Start mpirun with '104^3 in 3600sec'
+[[45493,1],43][btl_openib_component.c:3382:handle_wc] from u12_6 [[45493,1],40][btl_openib_component.c:3382:handle_wc] from u12_6 to: u12_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id ea9580 opcode 1  vendor error 129 qp_idx 0
+[[45493,1],41][btl_openib_component.c:3382:handle_wc] from u12_6 to: u12_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 2724980 opcode 1  vendor error 129 qp_idx 1
+[[45493,1],42][btl_openib_component.c:3382:handle_wc] from u12_6 to: u12_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 4aac3280 opcode 128  vendor error 129 qp_idx 1
+to: u12_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 1289b80 opcode 1  vendor error 129 qp_idx 1
+--------------------------------------------------------------------------
+The InfiniBand retry count between two MPI processes has been
+exceeded.  "Retry count" is defined in the InfiniBand spec 1.2
+(section 12.7.38):
+
+    The total number of times that the sender wishes the receiver to
+    retry timeout, packet sequence, etc. errors before posting a
+    completion error.
+
+This error typically means that there is something awry within the
+InfiniBand fabric itself.  You should note the hosts on which this
+error has occurred; it has been observed that rebooting or removing a
+particular host from the job can sometimes resolve this issue.
+
+Two MCA parameters can be used to control Open MPI's behavior with
+respect to the retry count:
+
+* btl_openib_ib_retry_count - The number of times the sender will
+  attempt to retry (defaulted to 7, the maximum value).
+* btl_openib_ib_timeout - The local ACK timeout parameter (defaulted
+  to 20).  The actual timeout value used is calculated as:
+
+     4.096 microseconds * (2^btl_openib_ib_timeout)
+
+  See the InfiniBand spec 1.2 (section 12.7.34) for more details.
+
+Below is some information about the host that raised the error and the
+peer to which it was connected:
+
+  Local host:   u12_6
+  Local device: mlx4_0
+  Peer host:    u12_5
+
+You may need to consult with your system administrator to get this
+problem fixed.
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+[[45493,1],16][btl_openib_component.c:3382:handle_wc] from u12_3 [[45493,1],26][btl_openib_component.c:3382:handle_wc] from u12_4 [[45493,1],27][btl_openib_component.c:3382:handle_wc] from u12_4 to: u12_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 4b770080 opcode 128  vendor error 129 qp_idx 1
+to: u12_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 238fb00 opcode 1  vendor error 129 qp_idx 0[[45493,1],24][btl_openib_component.c:3382:handle_wc] from u12_4 to: u12_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id c2fd80 opcode 128  vendor error 129 qp_idx 1
+[[45493,1],17][btl_openib_component.c:3382:handle_wc] from u12_3 to: u12_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 20ef380 opcode 128  vendor error 129 qp_idx 0
+[[45493,1],25][btl_openib_component.c:3382:handle_wc] from u12_4 to: u12_3 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 4adb6500 opcode 128  vendor error 129 qp_idx 3
+[[45493,1],18][btl_openib_component.c:3382:handle_wc] from u12_3 to: u12_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 26c5200 opcode 128  vendor error 129 qp_idx 0
+to: u12_3 
+error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 1047380 opcode 128  vendor error 129 qp_idx 3[[45493,1],22][btl_openib_component.c:3382:handle_wc] from u12_3 to: u12_5 
+error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 1b74800 opcode 128  vendor error 129 qp_idx 0
+[[45493,1],19][btl_openib_component.c:3382:handle_wc] from u12_3 to: u12_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 890f80 opcode 1  vendor error 129 qp_idx 1
+[[45493,1],20][btl_openib_component.c:3382:handle_wc] from u12_3 to: u12_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 136f280 opcode 128  vendor error 129 qp_idx 1
+[[45493,1],23][btl_openib_component.c:3382:handle_wc] from u12_3 to: u12_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 24c2f00 opcode 128  vendor error 129 qp_idx 0
+[[45493,1],21][btl_openib_component.c:3382:handle_wc] from u12_3 to: u12_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 25aef00 opcode 128  vendor error 129 qp_idx 0
+[[45493,1],56][btl_openib_component.c:3382:handle_wc] from u12_8 to: u12_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 1ddc580 opcode 1  vendor error 129 qp_idx 1
+[[45493,1],59][btl_openib_component.c:3382:handle_wc] from u12_8 to: u12_8 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 10a8000 opcode 1  vendor error 129 qp_idx 3
+[[45493,1],57][btl_openib_component.c:3382:handle_wc] from u12_8 to: u12_8 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 14f9580 opcode 1  vendor error 129 qp_idx 3
+[[45493,1],58][btl_openib_component.c:3382:handle_wc] from u12_8 to: u12_8 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 209e700 opcode 1  vendor error 129 qp_idx 0
+[[45493,1],54][btl_openib_component.c:3382:handle_wc] from u12_7 to: u12_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 155e380 opcode 1  vendor error 129 qp_idx 0
+[[45493,1],55][btl_openib_component.c:3382:handle_wc] from u12_7 to: u12_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 1e33580 opcode 1  vendor error 129 qp_idx 0
+[u12_1:00953] 21 more processes have sent help message help-mpi-btl-openib.txt / pp retry exceeded
+[u12_1:00953] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+slurmstepd: *** JOB 374 CANCELLED AT 2014-10-05T15:07:45 DUE TO NODE u12_1 FAILURE ***
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[45493,1],40]
+  Exit code:    255
+--------------------------------------------------------------------------

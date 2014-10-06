@@ -1,0 +1,19 @@
+/var/lib/slurm/slurmd/job00361/slurm_script: line 9: cat: command not found
+/var/lib/slurm/slurmd/job00361/slurm_script: line 9: grep: command not found
+/var/lib/slurm/slurmd/job00361/slurm_script: line 9: [: -eq: unary operator expected
+/var/lib/slurm/slurmd/job00361/slurm_script: line 26: egrep: command not found
+START_TIME=1412506797
+## 2014-10-05 10:59:57 Start mpirun with '104^3 in 3600sec'
+[u12_1:00454] [[46026,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00454] [[46026,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00454] [[46026,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00454] [[46026,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00454] [[46026,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00454] [[46026,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00454] [[46026,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00454] [[46026,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+--------------------------------------------------------------------------
+mpirun noticed that the job aborted, but has no info as to the process
+that caused that situation.
+--------------------------------------------------------------------------
+## 2014-10-05 10:59:59 Job ends

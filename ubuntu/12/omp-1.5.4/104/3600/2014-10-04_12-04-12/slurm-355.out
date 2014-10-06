@@ -1,0 +1,7 @@
+On Ubuntu we do not choose...
+## 2014-10-04 17:51:57 Start mpirun with '104^3 in 3600sec'
+## 2014-10-04 19:05:00 Job ends
+Traceback (most recent call last):
+  File "/usr/local/bin/eval_hpcg.py", line 12, in <module>
+    from docopt import docopt
+ImportError: No module named docopt

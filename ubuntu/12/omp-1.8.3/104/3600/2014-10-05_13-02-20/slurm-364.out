@@ -1,0 +1,20 @@
+/usr/lib64/openmpi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/chome/cluser/.local/bin:/chome/cluser/bin
+/var/lib/slurm/slurmd/job00364/slurm_script: line 10: cat: command not found
+/var/lib/slurm/slurmd/job00364/slurm_script: line 10: grep: command not found
+/var/lib/slurm/slurmd/job00364/slurm_script: line 10: [: -eq: unary operator expected
+/var/lib/slurm/slurmd/job00364/slurm_script: line 27: egrep: command not found
+START_TIME=1412506941
+## 2014-10-05 11:02:21 Start mpirun with '104^3 in 3600sec'
+[u12_1:00622] [[45154,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00622] [[45154,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00622] [[45154,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00622] [[45154,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00622] [[45154,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00622] [[45154,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00622] [[45154,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+[u12_1:00622] [[45154,0],0] mca_oob_tcp_recv_handler: invalid message type: 14
+--------------------------------------------------------------------------
+mpirun noticed that the job aborted, but has no info as to the process
+that caused that situation.
+--------------------------------------------------------------------------
+## 2014-10-05 11:02:21 Job ends

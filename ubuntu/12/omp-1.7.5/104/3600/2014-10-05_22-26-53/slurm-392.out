@@ -1,0 +1,13 @@
+START_TIME=1412578366
+## 2014-10-06 06:52:46 Start mpirun with '104^3 in 3600sec'
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: /chome/cluser/hpcg-2.4/ubuntu12_omp-1.7.5/bin/xhpcg
+Node: u12_1
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+40 total processes failed to start
+## 2014-10-06 06:52:47 Job ends
