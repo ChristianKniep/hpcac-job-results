@@ -1,0 +1,5 @@
+START_TIME=1412669406
+## 2014-10-07 09:10:06 Start mpirun with '104^3 in 3600sec'
+slurmstepd: *** JOB 429 CANCELLED AT 2014-10-07T09:10:19 ***
+mpirun: killing job...
+
