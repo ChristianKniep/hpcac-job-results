@@ -1,0 +1,5 @@
+START_TIME=1412828963
+## 2014-10-09 05:29:23 Start mpirun with '104^3 in 3600sec'
+## 2014-10-09 06:43:30 Job ends
+END_TIME=1412833410
+/var/lib/slurm/slurmd/job00492/slurm_script: line 57: eval_hpcg.py: command not found
