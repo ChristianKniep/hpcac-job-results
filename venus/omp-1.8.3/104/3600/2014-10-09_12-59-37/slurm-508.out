@@ -1,0 +1,18 @@
+START_TIME=1412852699
+## 2014-10-09 13:04:59 Start mpirun with '104^3 in 3600sec'
+--------------------------------------------------------------------------
+An ORTE daemon has unexpectedly failed after launch and before
+communicating back to mpirun. This could be caused by a number
+of factors, including an inability to create a connection back
+to mpirun due to a lack of common network interfaces and/or no
+route found between them. Please check network connectivity
+(including firewalls and network routing requirements).
+--------------------------------------------------------------------------
+## 2014-10-09 13:04:59 Job ends
+END_TIME=1412852699
+Traceback (most recent call last):
+  File "/usr/local/bin/eval_hpcg.py", line 95, in <module>
+    main()
+  File "/usr/local/bin/eval_hpcg.py", line 78, in main
+    res['node_list'] = options.get('SLURM_NODELIST', 'unkown')
+UnboundLocalError: local variable 'res' referenced before assignment

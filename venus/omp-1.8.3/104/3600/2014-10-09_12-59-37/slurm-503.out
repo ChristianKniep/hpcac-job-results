@@ -1,0 +1,4 @@
+START_TIME=1412852404
+## 2014-10-09 13:00:04 Start mpirun with '104^3 in 3600sec'
+/var/lib/slurm/slurmd/job00503/slurm_script: Zeile 49: mpirun: Kommando nicht gefunden.
+## 2014-10-09 13:00:04 Job ends

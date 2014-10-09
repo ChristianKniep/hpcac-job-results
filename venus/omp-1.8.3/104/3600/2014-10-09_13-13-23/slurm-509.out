@@ -1,0 +1,51 @@
++ . job.cfg
+++ MPI_VER=omp-1.8.3
+++ DIRNAME=scripts/venus/omp-1.8.3/xhpcg/104/3600
+++ OS_VER=7
+++ OS_BASE=centos
+++ PROB_SIZE=104
+++ JOB_TIME=3600
+++ SLURM_PARTITION=venus
++ BASE_PATH=/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin
++ export PATH=/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin
++ PATH=/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin
+++ cat /etc/issue
+++ grep -c 'Ubuntu 12.04'
++ '[' 0 -eq 1 ']'
++ [[ omp-1.8.3 =~ omp ]]
++ '[' omp-1.8.3 == omp-sys ']'
+++ echo omp-1.8.3
+++ egrep -o '[0-9\.]+'
++ MPI_NR=1.8.3
++ MPI_PATH=/usr/local/openmpi/1.8.3/
++ echo MPI_PATH=/usr/local/openmpi/1.8.3/
++ BASE_PATH=/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin
++ export PATH=/usr/local/openmpi/1.8.3//bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin
++ PATH=/usr/local/openmpi/1.8.3//bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin
++ export LD_LIBRARY_PATH=/usr/local/openmpi/1.8.3//lib:/usr/local/lib
++ LD_LIBRARY_PATH=/usr/local/openmpi/1.8.3//lib:/usr/local/lib
+++ date +%F_%H:%M:%S
++ echo START_DATE=2014-10-09_13:13:24
++ echo 'SLURM_NODELIST=venus[001-008]'
++ echo SLURM_JOBID=509
+++ date +%s
++ START_TIME=1412853204
++ echo START_TIME=1412853204
+START_TIME=1412853204
+++ date '+%F %H:%M:%S'
++ echo '## 2014-10-09 13:13:24 Start mpirun with '\''104^3 in 3600sec'\'''
+## 2014-10-09 13:13:24 Start mpirun with '104^3 in 3600sec'
++ mpirun --mca btl self,openib /chome/cluser/hpcg-2.4/centos7_omp-1.8.3/bin/xhpcg
++ EC=0
+++ date '+%F %H:%M:%S'
++ echo '## 2014-10-09 14:26:59 Job ends'
+## 2014-10-09 14:26:59 Job ends
++ '[' 0 -eq 0 ']'
+++ date +%s
++ END_TIME=1412857619
++ echo END_TIME=1412857619
+END_TIME=1412857619
++ WALL_CLOCK=4415
++ echo WALL_CLOCK=4415
++ eval_hpcg.py .
+NODES:venus[001-008]  | MPI:omp-1.8.3  | WALL:4415  | TIME:3710.01  | GFLOP/s:4.70928    | #THREADS/PROC:1   | #PROC:64  | Problem:416x416x416     | Local:104x104x104

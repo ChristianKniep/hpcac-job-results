@@ -1,0 +1,4 @@
+START_TIME=1412852351
+## 2014-10-09 12:59:11 Start mpirun with '104^3 in 3600sec'
+mpirun: Forwarding signal 18 to job
+slurmstepd: *** JOB 499 CANCELLED AT 2014-10-09T13:01:01 ***
