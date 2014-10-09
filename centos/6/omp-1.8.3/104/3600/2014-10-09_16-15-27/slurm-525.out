@@ -1,0 +1,13 @@
+START_TIME=1412881704
+## 2014-10-09 20:08:24 Start mpirun with '104^3 in 3600sec'
+--------------------------------------------------------------------------
+An ORTE daemon has unexpectedly failed after launch and before
+communicating back to mpirun. This could be caused by a number
+of factors, including an inability to create a connection back
+to mpirun due to a lack of common network interfaces and/or no
+route found between them. Please check network connectivity
+(including firewalls and network routing requirements).
+--------------------------------------------------------------------------
+## 2014-10-09 20:08:26 Job ends
+END_TIME=1412881706
+/var/lib/slurm/slurmd/job00525/slurm_script: line 57: eval_hpcg.py: command not found
