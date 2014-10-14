@@ -1,9 +1,13 @@
-START_TIME=1413216981
-## 2014-10-13 17:16:21 Start mpirun with '104^3 in 3600sec'
-[[12918,1],43][btl_openib_component.c:3348:handle_wc] from cos7_6 [[12918,1],40][btl_openib_component.c:3348:handle_wc] from cos7_6 to: cos7_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 1212d00 opcode 0  vendor error 129 qp_idx 0
-[[12918,1],41][btl_openib_component.c:3348:handle_wc] from cos7_6 to: cos7_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 3361da00 opcode 0  vendor error 129 qp_idx 1
-to: cos7_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 226c300 opcode 0  vendor error 129 qp_idx 1
-[[12918,1],42][btl_openib_component.c:3348:handle_wc] from cos7_6 to: cos7_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 3400b080 opcode 0  vendor error 129 qp_idx 1
+START_TIME=1413281919
+## 2014-10-14 11:18:39 Start mpirun with '104^3 in 3600sec'
+[[13738,1],55][btl_openib_component.c:3348:handle_wc] from cos7_7 to: cos7_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 33baf500 opcode 0  vendor error 129 qp_idx 0
+[[13738,1],52][btl_openib_component.c:3348:handle_wc] from cos7_7 to: cos7_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 990280 opcode 0  vendor error 129 qp_idx 0
+[[13738,1],54][btl_openib_component.c:3348:handle_wc] from cos7_7 [[13738,1],48][btl_openib_component.c:3348:handle_wc] from cos7_7 to: cos7_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 1040180 opcode 0  vendor error 129 qp_idx 0
+to: cos7_5 [[13738,1],50][btl_openib_component.c:3348:handle_wc] from cos7_7 to: cos7_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 1331b00 opcode 0  vendor error 129 qp_idx 0
+error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 3431f180 opcode 0  vendor error 129 qp_idx 0
+[[13738,1],49][btl_openib_component.c:3348:handle_wc] from cos7_7 to: cos7_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 320c1000 opcode 0  vendor error 129 qp_idx 0
+[[13738,1],53][btl_openib_component.c:3348:handle_wc] from cos7_7 to: cos7_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 32712100 opcode 0  vendor error 129 qp_idx 0
+[[13738,1],51][btl_openib_component.c:3348:handle_wc] from cos7_7 to: cos7_5 error polling LP CQ with status RETRY EXCEEDED ERROR status number 12 for wr_id 1e00000 opcode 0  vendor error 129 qp_idx 1
 --------------------------------------------------------------------------
 The InfiniBand retry count between two MPI processes has been
 exceeded.  "Retry count" is defined in the InfiniBand spec 1.2
@@ -33,12 +37,15 @@ respect to the retry count:
 Below is some information about the host that raised the error and the
 peer to which it was connected:
 
-  Local host:   cos7_6
+  Local host:   cos7_7
   Local device: mlx4_0
   Peer host:    cos7_5
 
 You may need to consult with your system administrator to get this
 problem fixed.
 --------------------------------------------------------------------------
-[cos7_1:04895] 3 more processes have sent help message help-mpi-btl-openib.txt / pp retry exceeded
-[cos7_1:04895] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[cos7_1:05315] 7 more processes have sent help message help-mpi-btl-openib.txt / pp retry exceeded
+[cos7_1:05315] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+slurmstepd: *** JOB 570 CANCELLED AT 2014-10-14T12:34:40 DUE TO NODE FAILURE ***
+mpirun: abort is already in progress...hit ctrl-c again to forcibly terminate
+
