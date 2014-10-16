@@ -1,5 +1,5 @@
-START_TIME=1413309229
-## 2014-10-14 18:53:49 Start mpirun with '104^3 in 3600sec'
+START_TIME=1413309437
+## 2014-10-14 19:57:17 Start mpirun with '104^3 in 3600sec'
 --------------------------------------------------------------------------
 A daemon (pid unknown) died unexpectedly with status 137 while attempting
 to launch so we are aborting.
@@ -15,4 +15,4 @@ automatically be forwarded to the remote nodes.
 mpirun noticed that the job aborted, but has no info as to the process
 that caused that situation.
 --------------------------------------------------------------------------
-## 2014-10-14 18:55:22 Job ends
+## 2014-10-14 20:13:55 Job ends

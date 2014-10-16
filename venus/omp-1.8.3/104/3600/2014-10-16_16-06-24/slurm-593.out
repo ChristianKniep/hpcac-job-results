@@ -1,0 +1,5 @@
+START_TIME=1413468386
+## 2014-10-16 16:06:26 Start mpirun with '104^3 in 3600sec'
+## 2014-10-16 17:20:09 Job ends
+END_TIME=1413472809
+NODES:venus[001-008]  | MPI:omp-1.8.3  | WALL:4423  | TIME:3716.6   | GFLOP/s:4.70093    | #THREADS/PROC:1   | #PROC:64  | Problem:416x416x416     | Local:104x104x104
