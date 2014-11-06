@@ -1,0 +1,5 @@
+START_TIME=1415297730
+## 2014-11-06 18:15:30 Start mpirun with mpi-benchmark
+mpirun --mca btl self,openib  /chome/cluser/mpi_bench/centos7_omp-sys//libexec/osu-micro-benchmarks/mpi/collective//osu_alltoall > osu_alltoall.out
+## 2014-11-06 18:15:31 Job ends
+END_TIME=1415297731

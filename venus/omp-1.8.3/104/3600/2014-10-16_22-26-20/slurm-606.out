@@ -1,0 +1,7 @@
+START_TIME=1413533815
+## 2014-10-17 10:16:56 Start mpirun with '104^3 in 3600sec'
+--------------------------------------------------------------------------
+mpirun noticed that process rank 25 with PID 3144 on node venus004 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+8 total processes killed (some possibly by mpirun during cleanup)
+## 2014-10-17 10:16:58 Job ends

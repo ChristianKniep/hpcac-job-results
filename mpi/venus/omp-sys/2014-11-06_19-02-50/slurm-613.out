@@ -1,0 +1,6 @@
+START_TIME=1415296971
+## 2014-11-06 19:02:51 Start mpirun with mpi-benchmark
+mpirun --mca btl self,openib  /chome/cluser/mpi_bench/centos7_omp-sys//libexec/osu-micro-benchmarks/mpi/collective//osu_alltoall > /osu_alltoall.out
+/var/lib/slurm/slurmd/job00613/slurm_script: Zeile 65: /osu_alltoall.out: Keine Berechtigung
+## 2014-11-06 19:02:51 Job ends
+!!! EXIT 1

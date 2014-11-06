@@ -1,0 +1,16 @@
+START_TIME=1413534017
+## 2014-10-17 09:20:17 Start mpirun with '104^3 in 3600sec'
+--------------------------------------------------------------------------
+An ORTE daemon has unexpectedly failed after launch and before
+communicating back to mpirun. This could be caused by a number
+of factors, including an inability to create a connection back
+to mpirun due to a lack of common network interfaces and/or no
+route found between them. Please check network connectivity
+(including firewalls and network routing requirements).
+--------------------------------------------------------------------------
+mpirun: Forwarding signal 18 to job
+slurmstepd: *** JOB 608 CANCELLED AT 2014-10-17T09:20:33 ***
+[cos6_1:07021] [[23205,0],0]->[[23205,0],1] mca_oob_tcp_msg_send_bytes: write failed: Broken pipe (32) [sd = 14]
+[cos6_1:07021] [[23205,0],0]-[[23205,0],1] mca_oob_tcp_peer_send_handler: unable to send header
+[cos6_1:07021] [[23205,0],0]->[[23205,0],1] mca_oob_tcp_msg_send_bytes: write failed: Broken pipe (32) [sd = 14]
+[cos6_1:07021] [[23205,0],0]-[[23205,0],1] mca_oob_tcp_peer_send_handler: unable to send header

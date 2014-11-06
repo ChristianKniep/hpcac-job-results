@@ -1,0 +1,5 @@
+START_TIME=1415296810
+## 2014-11-06 19:00:10 Start mpirun with mpi-benchmark
+/var/lib/slurm/slurmd/job00612/slurm_script: Zeile 64: /osu_alltoall.out: Keine Berechtigung
+## 2014-11-06 19:00:11 Job ends
+!!! EXIT 1
