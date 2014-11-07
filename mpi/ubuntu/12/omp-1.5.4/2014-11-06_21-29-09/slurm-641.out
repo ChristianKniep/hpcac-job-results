@@ -1,0 +1,198 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking for mpicc... mpicc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether mpicc accepts -g... yes
+checking for mpicc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of mpicc... gcc3
+checking for library containing sqrt... none required
+checking for library containing pthread_create... none required
+checking how to run the C preprocessor... mpicc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for unistd.h... (cached) yes
+checking for inline... inline
+checking for getpagesize... yes
+checking for gettimeofday... yes
+checking for memset... yes
+checking for sqrt... yes
+checking for MPI_Init... yes
+checking for MPI_Accumulate... yes
+checking for MPI_Get_accumulate... no
+checking for shmem_barrier_all... no
+checking for upc_memput... no
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating mpi/Makefile
+config.status: creating mpi/pt2pt/Makefile
+config.status: creating mpi/one-sided/Makefile
+config.status: creating mpi/collective/Makefile
+config.status: creating openshmem/Makefile
+config.status: creating upc/Makefile
+config.status: executing depfiles commands
+Making all in mpi
+make[1]: Entering directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi'
+Making all in pt2pt
+make[2]: Entering directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi/pt2pt'
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_bibw.o -MD -MP -MF .deps/osu_bibw.Tpo -c -o osu_bibw.o osu_bibw.c
+mv -f .deps/osu_bibw.Tpo .deps/osu_bibw.Po
+mpicc  -g -O2   -o osu_bibw osu_bibw.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_bw.o -MD -MP -MF .deps/osu_bw.Tpo -c -o osu_bw.o osu_bw.c
+mv -f .deps/osu_bw.Tpo .deps/osu_bw.Po
+mpicc  -g -O2   -o osu_bw osu_bw.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_latency.o -MD -MP -MF .deps/osu_latency.Tpo -c -o osu_latency.o osu_latency.c
+mv -f .deps/osu_latency.Tpo .deps/osu_latency.Po
+mpicc  -g -O2   -o osu_latency osu_latency.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_mbw_mr.o -MD -MP -MF .deps/osu_mbw_mr.Tpo -c -o osu_mbw_mr.o osu_mbw_mr.c
+mv -f .deps/osu_mbw_mr.Tpo .deps/osu_mbw_mr.Po
+mpicc  -g -O2   -o osu_mbw_mr osu_mbw_mr.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_multi_lat.o -MD -MP -MF .deps/osu_multi_lat.Tpo -c -o osu_multi_lat.o osu_multi_lat.c
+mv -f .deps/osu_multi_lat.Tpo .deps/osu_multi_lat.Po
+mpicc  -g -O2   -o osu_multi_lat osu_multi_lat.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_latency_mt.o -MD -MP -MF .deps/osu_latency_mt.Tpo -c -o osu_latency_mt.o osu_latency_mt.c
+mv -f .deps/osu_latency_mt.Tpo .deps/osu_latency_mt.Po
+mpicc  -g -O2   -o osu_latency_mt osu_latency_mt.o  
+make[2]: Leaving directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi/pt2pt'
+Making all in collective
+make[2]: Entering directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi/collective'
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_alltoallv.o -MD -MP -MF .deps/osu_alltoallv.Tpo -c -o osu_alltoallv.o osu_alltoallv.c
+mv -f .deps/osu_alltoallv.Tpo .deps/osu_alltoallv.Po
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_coll.o -MD -MP -MF .deps/osu_coll.Tpo -c -o osu_coll.o osu_coll.c
+mv -f .deps/osu_coll.Tpo .deps/osu_coll.Po
+mpicc  -g -O2   -o osu_alltoallv osu_alltoallv.o osu_coll.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_allgatherv.o -MD -MP -MF .deps/osu_allgatherv.Tpo -c -o osu_allgatherv.o osu_allgatherv.c
+mv -f .deps/osu_allgatherv.Tpo .deps/osu_allgatherv.Po
+mpicc  -g -O2   -o osu_allgatherv osu_allgatherv.o osu_coll.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_scatterv.o -MD -MP -MF .deps/osu_scatterv.Tpo -c -o osu_scatterv.o osu_scatterv.c
+mv -f .deps/osu_scatterv.Tpo .deps/osu_scatterv.Po
+mpicc  -g -O2   -o osu_scatterv osu_scatterv.o osu_coll.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_gatherv.o -MD -MP -MF .deps/osu_gatherv.Tpo -c -o osu_gatherv.o osu_gatherv.c
+mv -f .deps/osu_gatherv.Tpo .deps/osu_gatherv.Po
+mpicc  -g -O2   -o osu_gatherv osu_gatherv.o osu_coll.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_reduce_scatter.o -MD -MP -MF .deps/osu_reduce_scatter.Tpo -c -o osu_reduce_scatter.o osu_reduce_scatter.c
+mv -f .deps/osu_reduce_scatter.Tpo .deps/osu_reduce_scatter.Po
+mpicc  -g -O2   -o osu_reduce_scatter osu_reduce_scatter.o osu_coll.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_barrier.o -MD -MP -MF .deps/osu_barrier.Tpo -c -o osu_barrier.o osu_barrier.c
+mv -f .deps/osu_barrier.Tpo .deps/osu_barrier.Po
+mpicc  -g -O2   -o osu_barrier osu_barrier.o osu_coll.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_reduce.o -MD -MP -MF .deps/osu_reduce.Tpo -c -o osu_reduce.o osu_reduce.c
+mv -f .deps/osu_reduce.Tpo .deps/osu_reduce.Po
+mpicc  -g -O2   -o osu_reduce osu_reduce.o osu_coll.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_allreduce.o -MD -MP -MF .deps/osu_allreduce.Tpo -c -o osu_allreduce.o osu_allreduce.c
+mv -f .deps/osu_allreduce.Tpo .deps/osu_allreduce.Po
+mpicc  -g -O2   -o osu_allreduce osu_allreduce.o osu_coll.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_alltoall.o -MD -MP -MF .deps/osu_alltoall.Tpo -c -o osu_alltoall.o osu_alltoall.c
+mv -f .deps/osu_alltoall.Tpo .deps/osu_alltoall.Po
+mpicc  -g -O2   -o osu_alltoall osu_alltoall.o osu_coll.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_bcast.o -MD -MP -MF .deps/osu_bcast.Tpo -c -o osu_bcast.o osu_bcast.c
+mv -f .deps/osu_bcast.Tpo .deps/osu_bcast.Po
+mpicc  -g -O2   -o osu_bcast osu_bcast.o osu_coll.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_gather.o -MD -MP -MF .deps/osu_gather.Tpo -c -o osu_gather.o osu_gather.c
+mv -f .deps/osu_gather.Tpo .deps/osu_gather.Po
+mpicc  -g -O2   -o osu_gather osu_gather.o osu_coll.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_allgather.o -MD -MP -MF .deps/osu_allgather.Tpo -c -o osu_allgather.o osu_allgather.c
+mv -f .deps/osu_allgather.Tpo .deps/osu_allgather.Po
+mpicc  -g -O2   -o osu_allgather osu_allgather.o osu_coll.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_scatter.o -MD -MP -MF .deps/osu_scatter.Tpo -c -o osu_scatter.o osu_scatter.c
+mv -f .deps/osu_scatter.Tpo .deps/osu_scatter.Po
+mpicc  -g -O2   -o osu_scatter osu_scatter.o osu_coll.o  
+make[2]: Leaving directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi/collective'
+Making all in one-sided
+make[2]: Entering directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi/one-sided'
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_acc_latency.o -MD -MP -MF .deps/osu_acc_latency.Tpo -c -o osu_acc_latency.o osu_acc_latency.c
+mv -f .deps/osu_acc_latency.Tpo .deps/osu_acc_latency.Po
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_1sc.o -MD -MP -MF .deps/osu_1sc.Tpo -c -o osu_1sc.o osu_1sc.c
+mv -f .deps/osu_1sc.Tpo .deps/osu_1sc.Po
+mpicc  -g -O2   -o osu_acc_latency osu_acc_latency.o osu_1sc.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_get_bw.o -MD -MP -MF .deps/osu_get_bw.Tpo -c -o osu_get_bw.o osu_get_bw.c
+mv -f .deps/osu_get_bw.Tpo .deps/osu_get_bw.Po
+mpicc  -g -O2   -o osu_get_bw osu_get_bw.o osu_1sc.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_get_latency.o -MD -MP -MF .deps/osu_get_latency.Tpo -c -o osu_get_latency.o osu_get_latency.c
+mv -f .deps/osu_get_latency.Tpo .deps/osu_get_latency.Po
+mpicc  -g -O2   -o osu_get_latency osu_get_latency.o osu_1sc.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_put_bibw.o -MD -MP -MF .deps/osu_put_bibw.Tpo -c -o osu_put_bibw.o osu_put_bibw.c
+mv -f .deps/osu_put_bibw.Tpo .deps/osu_put_bibw.Po
+mpicc  -g -O2   -o osu_put_bibw osu_put_bibw.o osu_1sc.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_put_bw.o -MD -MP -MF .deps/osu_put_bw.Tpo -c -o osu_put_bw.o osu_put_bw.c
+mv -f .deps/osu_put_bw.Tpo .deps/osu_put_bw.Po
+mpicc  -g -O2   -o osu_put_bw osu_put_bw.o osu_1sc.o  
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"4.4.1\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 4.4.1\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"4.4.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.     -g -O2 -MT osu_put_latency.o -MD -MP -MF .deps/osu_put_latency.Tpo -c -o osu_put_latency.o osu_put_latency.c
+mv -f .deps/osu_put_latency.Tpo .deps/osu_put_latency.Po
+mpicc  -g -O2   -o osu_put_latency osu_put_latency.o osu_1sc.o  
+make[2]: Leaving directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi/one-sided'
+make[2]: Entering directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi'
+make[2]: Nothing to be done for `all-am'.
+make[2]: Leaving directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi'
+make[1]: Leaving directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi'
+make[1]: Entering directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1'
+make[1]: Nothing to be done for `all-am'.
+make[1]: Leaving directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1'
+Making install in mpi
+make[1]: Entering directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi'
+Making install in pt2pt
+make[2]: Entering directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi/pt2pt'
+make[3]: Entering directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi/pt2pt'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/libexec/osu-micro-benchmarks/mpi/pt2pt" || /bin/mkdir -p "/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/libexec/osu-micro-benchmarks/mpi/pt2pt"
+  /usr/bin/install -c osu_bibw osu_bw osu_latency osu_mbw_mr osu_multi_lat osu_latency_mt '/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/libexec/osu-micro-benchmarks/mpi/pt2pt'
+make[3]: Leaving directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi/pt2pt'
+make[2]: Leaving directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi/pt2pt'
+Making install in collective
+make[2]: Entering directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi/collective'
+make[3]: Entering directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi/collective'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/libexec/osu-micro-benchmarks/mpi/collective" || /bin/mkdir -p "/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/libexec/osu-micro-benchmarks/mpi/collective"
+  /usr/bin/install -c osu_alltoallv osu_allgatherv osu_scatterv osu_gatherv osu_reduce_scatter osu_barrier osu_reduce osu_allreduce osu_alltoall osu_bcast osu_gather osu_allgather osu_scatter '/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/libexec/osu-micro-benchmarks/mpi/collective'
+make[3]: Leaving directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi/collective'
+make[2]: Leaving directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi/collective'
+Making install in one-sided
+make[2]: Entering directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi/one-sided'
+make[3]: Entering directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi/one-sided'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/libexec/osu-micro-benchmarks/mpi/one-sided" || /bin/mkdir -p "/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/libexec/osu-micro-benchmarks/mpi/one-sided"
+  /usr/bin/install -c osu_acc_latency osu_get_bw osu_get_latency osu_put_bibw osu_put_bw osu_put_latency '/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/libexec/osu-micro-benchmarks/mpi/one-sided'
+make[3]: Leaving directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi/one-sided'
+make[2]: Leaving directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi/one-sided'
+make[2]: Entering directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi'
+make[3]: Entering directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi'
+make[2]: Leaving directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi'
+make[1]: Leaving directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1/mpi'
+make[1]: Entering directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1'
+make[2]: Entering directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1'
+test -z "/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/libexec/osu-micro-benchmarks" || /bin/mkdir -p "/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/libexec/osu-micro-benchmarks"
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1'
+make[1]: Leaving directory `/chome/cluser/mpi_bench/ubuntu12_omp-1.5.4/osu-micro-benchmarks-4.4.1'
+START_TIME=1415305810
+## 2014-11-06 20:30:10 Start mpirun with mpi-benchmark
+mpirun --mca btl self,openib  /chome/cluser/mpi_bench/ubuntu12_omp-1.5.4//libexec/osu-micro-benchmarks/mpi/collective//osu_alltoall > osu_alltoall.out
+## 2014-11-06 20:30:12 Job ends
+END_TIME=1415305812
