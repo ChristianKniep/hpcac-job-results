@@ -1,0 +1,2 @@
+/var/lib/slurm/slurmd/job00703/slurm_script: line 111: unexpected EOF while looking for matching `"'
+/var/lib/slurm/slurmd/job00703/slurm_script: line 112: syntax error: unexpected end of file

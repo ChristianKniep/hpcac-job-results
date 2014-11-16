@@ -1,0 +1,70 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.3.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.3.0-f5222ca19ce6
+Exec   : blockMesh
+Date   : Nov 16 2014
+Time   : 13:03:13
+Host   : "of13_1"
+PID    : 7877
+Case   : /chome/cluser/job_results/openfoam/openfoam/13/omp-sys/2014-11-16_14-03-11
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Disallowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from
+    "/chome/cluser/job_results/openfoam/openfoam/13/omp-sys/2014-11-16_14-03-11/constant/polyMesh/blockMeshDict"
+Creating curved edges
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 0.1
+    Block 0 cell size :
+        i : 0.001 .. 0.001
+        j : 0.001 .. 0.001
+        k : 0.01 .. 0.01
+
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (0 0 0) (1 1 0.01)
+  nPoints: 2004002
+  nCells: 1000000
+  nFaces: 4002000
+  nInternalFaces: 1998000
+----------------
+Patches
+----------------
+  patch 0 (start: 1998000 size: 1000) name: movingWall
+  patch 1 (start: 1999000 size: 3000) name: fixedWalls
+  patch 2 (start: 2002000 size: 2000000) name: frontAndBack
+
+End
+
